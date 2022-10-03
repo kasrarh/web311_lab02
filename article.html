@@ -42,96 +42,90 @@
         </div>
       </div>
     </nav>
-    <nav class="navbar bg-white justify-content-right">
+    <nav style="background-color: #33354F" class="navbar justify-content-right">
       <div class="container-fluid d-flex flex-row-reverse">
         <div class="col-8 col-lg-5">
           <form class="d-flex">
          
-            <button
-              class="btn btn-primary"
-              type="submit"
-              style="margin-right: 10px">Search</button>
-            <input
-            class="form-control"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
+            <button class="btn btn-primary"type="submit" style="margin-right: 10px">Search</button>
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
           </form>
         </div>
         <div class="col- col-lg-3 m-5">
           <a class="navbar-brand" href="/Blog">
-            <img src="pictures/logo.svg" width="40%" class="img-fluid" alt="logo-img" />
+            <img src="../pictures/logo.svg" width="40%" class="img-fluid" alt="logo-img" />
           </a>
         </div>
       </div>
     </nav>
   </header>
   <body>
-    <div class="grid text-center bg-light">
-      <div class="row">
-        <div class="col-12 container-fluid">
-          <img src="pictures/hero.jpg" class="img-fluid" alt="hero-img" />
-          <h5 class="m-2">Better and faster backups with JetBackup 5</h5>
-          <p class="m-3">We’re pleased to announce that JetBackup 5 is now available at WHC! In this article, we’ll look over the improvements in this new release,...</p>
-          <button class="btn btn-primary">Read more</button>
-          
+    <div style="margin-top: 2%" class="grid text-center">
+        <div class="row">
+          <div class="col-12">
+            <img
+              width="80%"
+              src="../pictures/hero.jpg"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </div>
-    </div>
-    <div style="margin-top: 2%" class="container bg-light" >
-      <div class="row">
-        <div class="col-12 col-lg-6 bg-white shadow" style="border: 2px; border-radius: 2%;">
-          <img src="pictures/blog1.jpg" class="img-thumbnail" alt="img/blog.jpg" />
-          <div
-            class="col">
-            <p class="m-3">
-              AlmaLinux 8 is now available with our Cloud and Dedicated servers. Are you a Cloud or Dedicated server administrator? Read on to learn about how this...
-            </p>
-            <button  class="btn btn-primary m-3">Read more</button>
-
-          </div>
+    <div class="text-left m-5">
+        <h2 class="m-5">
+            AlmaLinux 8 is now available!
+        </h2>
+        <p class="m-5">
+            Are you a Cloud or Dedicated server administrator? Read on to learn about how this affects you.
+        </p>
+        <div class="m-5" style="background-color: #f2f8ff">
+            <ul>
+                <li>
+                    <a class="text-muted" href="">What is AlmaLinux 8?</a> 
+                </li>
+                <li>
+                    <a class="text-muted" href="">How do I get it?</a> 
+                </li>
+                <li>
+                    <a class="text-muted" href="">What’s the difference between Cloudlinux and AlmaLinux 8?</a> 
+                </li>
+                <li>
+                    <a class="text-muted" href="">Should I upgrade to AlmaLinux 8 and how do I upgrade?</a> 
+                </li>
+            </ul>
         </div>
-        <div class="col-12 col-lg-6 bg-white shadow" style="border: 2px; border-radius: 2%;">
-          <img src="pictures/blog2.jpg" class="img-thumbnail" alt="img/blog.jpg" />
-          <div
-            class="col">
-            <p class="m-3">
-              Working from home is no longer a luxury enjoyed by a small few but is now the gold standard. It can certainly allow a better work/life balance, yet can...
-            </p>
-            <button class="btn btn-primary m-3">Read more</button>
-
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 bg-white shadow" style="border: 2px; border-radius: 2%;">
-          <img src="pictures/blog3.jpg" class="img-thumbnail" alt="img/blog.jpg" />
-          <div
-            class="col">
-            <p class="m-s">
-              We've all been there... Sitting in front of the screen, facing a daunting task. And then... maybe just a quick email check or a quick scroll on Facebook?...
-            </p>
-            <button class="btn btn-primary m-3">Read more</button>
-
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 bg-white shadow" style="border: 2px; border-radius: 2%;">
-          <img src="pictures/blog4.jpg" class="img-thumbnail" alt="img/blog.jpg" />
-          <div
-            class="col">
-            <p class="m-3">
-              TLDR; Starting a business requires a solid plan, a great business name, a website that emotionally connects with your target market and a promotional strategy...
-            </p>
-          <button class="btn btn-primary m-3">Read more</button>
-            
+        <h2 class="m-5">What is AlmaLinux 8?</h2>
+        <p class="m-5">AlmaLinux 8 is an enterprise-grade operating system (OS), like CentOS, that provides a powerful platform for your servers to deliver websites and email. It was developed in response to the announcement that CentOS 8 support has reached ‘end of life’. This means essential security updates will soon no longer be available for this OS.</p>
+        <h4 class="m-5">Leave us a comment</h4>
+      <div class="d-flex justify-content-center row">
+        <div class="col-md-8 bg-white shadow" style="border: 2px; border-radius: 2%;">
+          <div class="d-flex flex-column comment-section">
+            <div class="bg-light p-2">
+              <div class="d-flex flex-row align-items-start">
+                <div class="row">
+                <div class="col-12 col-lg-12">
+                <label class="form-label" for="">Comment</label>
+                <textarea class="form-control ml-1 shadow-none textarea"></textarea>
+            </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="">Name <span style="color:red;">*</span></label>
+                    <input class="form-control" type="text" name="name" id="" required>
+                </div>
+                <div class="col-md-6">
+                <label class="form-label" for="">Email</label>
+                <input class="form-control" type="text" name="email" id="" required>
+                </div>
+            </div>
+              </div>
+              <div class="mt-2">
+                <button class="btn btn-primary "type="button">Post Comment</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-
+    </div>
   </body>
   <footer class="bg-light bg-gradient justify-content-between">
     <div class="row m-5">
@@ -158,7 +152,7 @@
               ><img
                 height="30px"
                 width="30px"
-                src="pictures/facebook.png"
+                src="../pictures/facebook.png"
                 class="img-fluid"
                 alt="facebook"
             /></a>
@@ -168,7 +162,7 @@
               ><img
                 height="30px"
                 width="30px"
-                src="pictures/instagram.png"
+                src="../pictures/instagram.png"
                 class="img-fluid"
                 alt="instagram"
             /></a>
@@ -178,7 +172,7 @@
               ><img
                 height="30px"
                 width="30px"
-                src="pictures/twitter.png"
+                src="../pictures/twitter.png"
                 class="img-fluid"
                 alt="twitter"
             /></a>
