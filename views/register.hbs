@@ -1,10 +1,18 @@
-<!DOCTYPE html>
+<!--
+Name: Kasra Rahimian
+Email : krahimian@myseneca.ca
+studentId: 118335207
+Assignemnt3
+Date: Oct 19th 2022
+ Cylic URL https://lively-gear-bear.cyclic.app
+ Github : kasrarh/WEB322
+-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 2</title>
+    <title>Assignment 3</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -61,77 +69,65 @@
         </div>
         <div class="col- col-lg-3 m-5">
           <a class="navbar-brand" href="/Blog">
-            <img src="pictures/logo.svg" width="40%" class="img-fluid" alt="logo-img" />
+            <img src="../pictures/logo.svg" width="40%" class="img-fluid" alt="logo-img" />
           </a>
         </div>
       </div>
     </nav>
   </header>
-  <body>
-    <div class="grid text-center bg-light">
-      <div class="row">
-        <div class="col-12 container-fluid">
-          <img src="pictures/hero.jpg" class="img-fluid" alt="hero-img" />
-          <h5 class="m-2">Better and faster backups with JetBackup 5</h5>
-          <p class="m-3">We’re pleased to announce that JetBackup 5 is now available at WHC! In this article, we’ll look over the improvements in this new release,...</p>
-          <button class="btn btn-primary">Read more</button>
-          
-        </div>
-      </div>
-    </div>
-    <div style="margin-top: 2%" class="container bg-light" >
-      <div class="row">
-        <div class="col-12 col-lg-6 bg-white shadow" style="border: 2px; border-radius: 2%;">
-          <img src="pictures/blog1.jpg" class="img-thumbnail" alt="img/blog.jpg" />
-          <div
-            class="col">
-            <p class="m-3">
-              AlmaLinux 8 is now available with our Cloud and Dedicated servers. Are you a Cloud or Dedicated server administrator? Read on to learn about how this...
-            </p>
-            <button  class="btn btn-primary m-3">Read more</button>
 
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 bg-white shadow" style="border: 2px; border-radius: 2%;">
-          <img src="pictures/blog2.jpg" class="img-thumbnail" alt="img/blog.jpg" />
-          <div
-            class="col">
-            <p class="m-3">
-              Working from home is no longer a luxury enjoyed by a small few but is now the gold standard. It can certainly allow a better work/life balance, yet can...
-            </p>
-            <button class="btn btn-primary m-3">Read more</button>
-
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 bg-white shadow" style="border: 2px; border-radius: 2%;">
-          <img src="pictures/blog3.jpg" class="img-thumbnail" alt="img/blog.jpg" />
-          <div
-            class="col">
-            <p class="m-s">
-              We've all been there... Sitting in front of the screen, facing a daunting task. And then... maybe just a quick email check or a quick scroll on Facebook?...
-            </p>
-            <button class="btn btn-primary m-3">Read more</button>
-
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 bg-white shadow" style="border: 2px; border-radius: 2%;">
-          <img src="pictures/blog4.jpg" class="img-thumbnail" alt="img/blog.jpg" />
-          <div
-            class="col">
-            <p class="m-3">
-              TLDR; Starting a business requires a solid plan, a great business name, a website that emotionally connects with your target market and a promotional strategy...
-            </p>
-          <button class="btn btn-primary m-3">Read more</button>
-            
+    <section style="background-color:rgb(195, 254, 255)">
+      <div class="container" >
+        <div class="row d-flex align-items-center justify-content-center ">
+            <div class="col-lg-12 col-12 align-items-center">
+                <h1>Register</h1>
             </div>
+          <div class="col-md-12 col-lg-12 col-xl-12">
+            <img src="../pictures/hero.jpg" class="img-fluid" />
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-6 p-5">
+            <form action="/register" enctype="application/x-www-form-urlencoded" method="post"
+            >
+            
+              <div class="form-outline mb-4">
+                {{#if errorMessage}}<div class="alert alert-danger">
+                    Error:{{errorMessage}}</div>{{/if}}
+              </div>
+              <input {{#if body.name}}value="{{body.ame}}"{{/if}} name="name" type="text" id="name"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="name">Full Name</label>
+                <input {{#if body.username}}value="{{body.username}}"{{/if}} name="username" type="text" id="username"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="username">Username</label>
+
+              <div class="form-outline mb-4">
+                <input type="password" name="password" id="password" class="form-control form-control-lg"
+                />
+                <label class="form-label" for="password">Password</label>
+              </div>
+              <input {{#if body.phone}}value="{{body.phone}}"{{/if}} name="phone" type="text" id="phone"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="phone">Phone number</label>
+                <input {{#if body.email}}value="{{body.email}}"{{/if}} name="email" type="email" id="email"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="email">Email</label>
+
+              <div
+                class="d-flex justify-content-around align-items-center mb-4"
+              >
+              <button  type="submit" value="register" name="register" class="btn btn-primary btn-lg btn-block"
+              >
+                Sign in
+              </button>
+            </form>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-
-
+    </section>
   </body>
   <footer class="bg-light bg-gradient justify-content-between">
     <div class="row m-5">
@@ -158,7 +154,7 @@
               ><img
                 height="30px"
                 width="30px"
-                src="pictures/facebook.png"
+                src="../pictures/facebook.png"
                 class="img-fluid"
                 alt="facebook"
             /></a>
@@ -168,7 +164,7 @@
               ><img
                 height="30px"
                 width="30px"
-                src="pictures/instagram.png"
+                src="../pictures/instagram.png"
                 class="img-fluid"
                 alt="instagram"
             /></a>
@@ -178,7 +174,7 @@
               ><img
                 height="30px"
                 width="30px"
-                src="pictures/twitter.png"
+                src="../pictures/twitter.png"
                 class="img-fluid"
                 alt="twitter"
             /></a>
@@ -187,6 +183,14 @@
       </div>
     </div>
   </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
+</html>
+
+  <!-- bootstrap scripts -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
